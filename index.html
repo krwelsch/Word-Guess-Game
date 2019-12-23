@@ -9,12 +9,23 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
+<style>
+  #wrd-generator {
+    margin-left: 20px;
+    font-size: 25px;
+    color: black;
+    border-style: solid;
+    width: 100px;
+  }
+  </style>
+
 <body>
 
 <h1>Press any key to get started!</h1>
 <br>
 
-<h3 id="wrd-generator"></h3>
+<button id="wrd-generator"></button>
 
 <br>
 
@@ -37,13 +48,38 @@ var wordGenerator = wordchoices[Math.floor(Math.random() * wordchoices.length)];
 
 $("#wrd-generator").html(wordGenerator)
 
+console.log(wordGenerator[2])
+
+var word1 = wordGenerator.split("");  
+
+console.log(word1)
+
+
+ // 1. Create a for-loop to iterate through the letters array.
+// for (var word1 = 0; i < wordGenerator.length; i++) {
+
+// Inside the loop...
+
+// 2. Create a variable named "letterBtn" equal to $("<button>");
+// var letterBtn = $("<button>");
+
+// 3. Then give each "letterBtn" the following classes: "letter-button" "letter" "letter-button-color".
+// letterBtn.addClass("letter-button letter letter-button-color");
+
+// 4. Then give each "letterBtn" a data-attribute called "data-letter".
+// letterBtn.attr("data-letter", letters[i]);
+
+// 5. Then give each "letterBtns" a text equal to "letters[i]".
+// letterBtn.text(letters[i]);
+
+// 6. Finally, append each "letterBtn" to the "#buttons" div (provided).
+// $("#buttons").append(letterBtn);
+// letterBtn.appendTo($("#buttons"));
+
+// }
 
 
 
-
-
-
-// var word1puzzle = str.split("word1");
 
         // Visibility Buttons
         // $(".vis-button").on("click", function() {
@@ -54,10 +90,15 @@ $("#wrd-generator").html(wordGenerator)
         // });
 
 
+
+
+
+
+
+
 //  if statement for each letter being guessed, so we need
 // to break it down into individual letters and if a letter is 
-// incorrect it needs to subtract from guesses remaining
-
+// incorrect it needs to subtract from guesses remaini
 
 
 //  display letters guessed already as it is also subtracting from score -->
