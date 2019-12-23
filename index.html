@@ -7,8 +7,64 @@
     <title>Word Guess Game</title>
 
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+
+<h1>Press any key to get started!</h1>
+<br>
+
+<h3 id="wrd-generator"></h3>
+
+<br>
+
+<h2>Wins</h2>
+
+<!-- Beginning `_ _ _ _ _ _ _`.  As the user guesses the correct letters, -->
+<!-- reveal them: `m a d o _  _ a`. -->
+
+<h2>Number of Guesses Remaining</h2>
+
+<!-- create the word being guessed -->
+
+<script type="text/javascript">
+
+var wordchoices = ["avalanche", "snowshoe", "mountains", "backpacking", "wilderness"];
+
+console.log(wordchoices[2]) 
+
+var wordGenerator = wordchoices[Math.floor(Math.random() * wordchoices.length)];
+
+$("#wrd-generator").html(wordGenerator)
+
+
+
+
+
+
+
+// var word1puzzle = str.split("word1");
+
+        // Visibility Buttons
+        // $(".vis-button").on("click", function() {
+        //   word1.animate({ opacity: "1" });
+        // });
+        // $(".invis-button").on("click", function() {
+        //   word1.animate({ opacity: "0.05" });
+        // });
+
+
+//  if statement for each letter being guessed, so we need
+// to break it down into individual letters and if a letter is 
+// incorrect it needs to subtract from guesses remaining
+
+
+
+//  display letters guessed already as it is also subtracting from score -->
+//  After the user wins/loses the game should automatically choose another word and make the user play it. -->
     
+</script>
+
+<h2>Letters Already Guessed</h2>
 </body>
 </html>
